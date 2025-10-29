@@ -62,6 +62,8 @@ CNN-project/
 
 ## Training Function:
 - All models use the same run_one_epoch() function for training and evaluation, with proper handling for GPU and gradient updates.
+
+## Results:
 ```
 | Model       | Epochs | Data Aug | Scheduler | Best Validation Accuracy |
 | ----------- | ------ | -------- | --------- | ------------------------ |
