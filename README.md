@@ -29,3 +29,24 @@ CNN-project/
 - Dataset: CIFAR-10 (10 classes, 60,000 images)
 - Data Augmentation: Random cropping and horizontal flipping for training images.
 - Important Folder: data/outputs/ contains results and figures from experiments.
+
+## Models
+- 1. FlatNet
+  - Fully connected network (32×32×3 → 10 outputs)
+  - Serves as a baseline.
+
+- 2. Tiny CNN
+  - 2 convolutional layers, small channel width.
+  - MaxPool after each conv layer.
+
+-3. Wide CNN
+  - Similar to Tiny CNN but with wider channels (32 → 64).
+
+-4. Deep CNN
+  - 3 convolutional layers, deeper than Tiny/Wide CNN.
+
+-5. Deep 4-Block CNN
+  -4 convolutional blocks, deeper architecture.
+6. Deep 5-Block CNN
+
+5 convolutional blocks, largest tested network.<img width="707" height="231" alt="c8b8df78-41e0-4be2-8625-c7fd37a22856" src="https://github.com/user-attachments/assets/4889cdc6-55b2-46ce-b89e-b3ba652d864c" />
