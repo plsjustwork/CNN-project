@@ -32,22 +32,22 @@ CNN-project/
 
 ## Models
 
-- 1. FlatNet
+- FlatNet
   - Fully connected network (32×32×3 → 10 outputs)
   - Serves as a baseline.
 
-- 2. Tiny CNN
+- Tiny CNN
   - 2 convolutional layers, small channel width.
   - MaxPool after each conv layer.
 
--3. Wide CNN
+- Wide CNN
   - Similar to Tiny CNN but with wider channels (32 → 64).
 
--4. Deep CNN
+- Deep CNN
   - 3 convolutional layers, deeper than Tiny/Wide CNN.
 
--5. Deep 4-Block CNN
+- Deep 4-Block CNN
   - 4 convolutional blocks, deeper architecture.
-  - 
-6. Deep 5-Block CNN
+     
+- Deep 5-Block CNN
   - 5 convolutional blocks, largest tested network.
