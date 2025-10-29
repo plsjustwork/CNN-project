@@ -1,0 +1,16 @@
+# Python virtual environment
+venv/
+
+# Datasets and archives
+data/
+*.zip
+*.tar.gz
+*.tgz
+*.tar
+*.gz
+
+# ML model checkpoints
+*.pt
+*.h5
+*.ckpt
+*.weights

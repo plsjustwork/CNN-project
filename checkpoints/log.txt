@@ -1,0 +1,53 @@
+FLAT MODEL RESULTS (3 EPOCHS):
+Best val acc 0.377
+
+FLAT MODEL RESULTS (10 EPOCHS):
+Best val acc 0.392
+
+FLAT MODEL + AUGMENTATION RESULTS (10 EPOCHS):
+Best val acc: val acc 0.364
+
+TINY CNN (3 EPOCHS):
+Best  val acc: 0.581
+
+TINY CNN(10 EPOCHS):
+Best val acc: 0.647
+
+TINY CNN + AUGMENTATION (10 EPOCHS):
+Best val acc : 0.641
+
+---------> CNN's accuracy is leaps and bounds better than FLAT MODEL so the next few adjustments will be applied only on CNN
+
+
+#MODIFIED 30 EPOCHS FOR THE AUGMENTATION TO PROVE ITS WORTH ALONG WITH THE SCHEDULER
+TINY CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
+Best val acc: 0.688
+
+--------->Adding a scheduler and adding more epochs contributed to adding 4.7% accuracy to the MODEL
+
+#Changed CNN to a wider one with 64x64 instead of 32x32; testing the CNN's width impact on the accuracy of project:
+Wide CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
+Best val acc: 0.728
+
+----------> Adding a wider CNN instead of the tiny one added the results by 4% to the MODEL
+
+#Changing into a deeper CNN with 128x128 to see if there's a limit to how much it improves accuracy
+Deep CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
+Best val acc 0.784
+
+---------->There is still a large improvement of almost 5,6% Accuracy upon making the model deep.
+
+#Changing into an even deeper CNN; 4 block one to test the limit; see if we reached the cap of improving accuracy by widening the model
+4 block CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
+Best val acc 0.815
+
+---------->Still a big improvement of 3% Accuracy; widening the model seems to still give us even more accuracy.
+
+#Adding another layer to the CNN to test when the diminishing returns start to appear upon adding more and more layers
+5 block CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
+Best val acc 0.829
+
+----------> About a 1.5% improvement; widening it seems to add more accuracy but it isn't noteworthy; we are at the point of diminishing returns;
+Adding any more blocks would eventually cause the model to overfit and it is not cost effective.
+
+The system went from a measly 0.377 accuracy to approximately 0.83 after additional changes.
