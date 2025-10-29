@@ -7,13 +7,12 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Dataset](#dataset)
-- [Models](#models)
 - [Training](#training)
+- [Results](#results)
+- [Models](#models)
 - [Usage](#usage)
 - [Saved Models & Outputs](#saved-models--outputs)
-- [Results](#results)
 - [Dependencies](#dependencies)
-- [License](#license)
 
 ## Overview
 
