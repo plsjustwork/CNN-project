@@ -21,7 +21,7 @@
 - Device: CUDA if available
 
 ## Example Training Command:
-```
+```bash
 # Train DeepCNN with scheduler
 python train_model.py --model DeepCNN --use_scheduler
 ```
@@ -43,7 +43,10 @@ python train_model.py --model DeepCNN --use_scheduler
 ```
 - Observation: CNN architectures outperform fully connected networks significantly. Increasing width and depth improves accuracy, but returns diminish after 4-5 blocks.
 ## Saved Models
-- All trained models are saved in: data/outputs/models/
+- All trained models are saved in:
+  ```bash
+  data/outputs/models/
+  ```
 - Default naming: <ModelName>_cifar10.pth
 - Best validation model: best_model_<ModelName>.pt
 
