@@ -11,8 +11,7 @@
 - [Results](#results)
 - [Models](#models)
 - [Usage](#usage)
-- [Saved Models & Outputs](#saved-models--outputs)
-- [Dependencies](#dependencies)
+- [Saved Models & Outputs](#saved-models)
 
 ## Overview
 
@@ -75,7 +74,7 @@ python train_model.py --model WideCNN --batch_size 64 --lr 1e-4
 | 5-block CNN | 30     | ✅        | ✅         | 0.829                 |
 ```
 - Observation: CNN architectures outperform fully connected networks significantly. Increasing width and depth improves accuracy, but returns diminish after 4-5 blocks.
-## Saved Models
+## Saved-Models
 - All trained models are saved in:
   ```bash
   data/outputs/models/
