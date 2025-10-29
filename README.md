@@ -24,6 +24,18 @@
 - A sample of the dataset can be visualized with inspect_data.py, which generates a grid of one example per class:
   ![CIFAR-10 Sample Grid](data/outputs/figures/cifar10_samples.png)
 
+## Models  
+The project includes several CNN architectures:
+```
+| Name        | Description |
+|------------|-------------|
+| `FlatNet`  | Fully connected network (flattened input) |
+| `TinyCNN`  | Small CNN with few layers |
+| `WideCNN`  | Wider CNN with more channels |
+| `DeepCNN`  | Deeper CNN with more layers |
+| `Deep4bCNN` | 4-block deep CNN |
+| `Deep5bCNN` | 5-block deep CNN |
+```
     
 ## Training
 
