@@ -2,7 +2,7 @@
 
 ## Overview
 
-- This project explores different Convolutional Neural Network (CNN) architectures for classifying images from the CIFAR-10 dataset. We compare simple fully-connected networks with increasingly deep and wide CNNs to study the impact of model complexity, data augmentation, and learning rate scheduling on performance.
+- This project explores various neural network architectures on the CIFAR-10 dataset, comparing performance from simple fully connected models to deep convolutional networks.
 
 ## Project Structure
 ```
@@ -26,9 +26,9 @@ CNN-project/
 ```
 ## Data
 
-- Dataset: CIFAR-10 (10 classes, 60,000 images)
-- Data Augmentation: Random cropping and horizontal flipping for training images.
-- Important Folder: data/outputs/ contains results and figures from experiments.
+- Dataset: CIFAR-10: 60,000 32x32 color images in 10 classes (50,000 train / 10,000 test).
+- A sample of the dataset can be visualized with inspect_data.py, which generates a grid of one example per class:
+  ![CIFAR-10 Sample Grid](data/outputs/figures/cifar10_samples.png)
 
 ## Models
 
