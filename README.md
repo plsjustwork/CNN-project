@@ -82,13 +82,6 @@ python train_model.py --model WideCNN --batch_size 64 --lr 1e-4
 - Default naming: <ModelName>_cifar10.pth
 - Best validation model: best_model_<ModelName>.pt
 
-## Future Work
-
-- Modularize training and evaluation for easier experimentation
-- Add more data augmentations
-- Explore more architectures (ResNet, VGG, etc.)
-- Add inference scripts and visualizations
-
 ## Usage
 
 - 1.Install requirements
@@ -136,7 +129,13 @@ CNN-project/
 ├── .requirements.txt
 └── README.md              # Project documentation
 ```
+## Future Work
 
+- Modularize training and evaluation for easier experimentation
+- Add more data augmentations
+- Explore more architectures (ResNet, VGG, etc.)
+- Add inference scripts and visualizations
+- 
 ## Observations:
 
 - CNN architectures outperform fully connected networks by a large margin.
