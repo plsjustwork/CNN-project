@@ -1,10 +1,10 @@
-#CNN-Project: CIFAR-10 Classification
+# CNN-Project: CIFAR-10 Classification
 
-##Overview
+## Overview
 
 - This project explores different Convolutional Neural Network (CNN) architectures for classifying images from the CIFAR-10 dataset. We compare simple fully-connected networks with increasingly deep and wide CNNs to study the impact of model complexity, data augmentation, and learning rate scheduling on performance.
 
-##Project Structure
+## Project Structure
 ```
 CNN-project/
 ├── data/                  # CIFAR-10 dataset and outputs
@@ -24,7 +24,7 @@ CNN-project/
 ├── .gitignore             # Ignored files/folders
 └── README.md              # Project documentation
 ```
-##Data
+## Data
 
 - Dataset: CIFAR-10 (10 classes, 60,000 images)
 - Data Augmentation: Random cropping and horizontal flipping for training images.
