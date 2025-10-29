@@ -135,7 +135,7 @@ CNN-project/
 - Add more data augmentations
 - Explore more architectures (ResNet, VGG, etc.)
 - Add inference scripts and visualizations
-- 
+  
 ## Observations:
 
 - CNN architectures outperform fully connected networks by a large margin.
