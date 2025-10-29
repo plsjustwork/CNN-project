@@ -59,3 +59,20 @@ CNN-project/
 - Scheduler: CosineAnnealingLR (per epoch)
 - Batch size: 128
 - Device: CUDA if available
+
+## Training Function:
+- All models use the same run_one_epoch() function for training and evaluation, with proper handling for GPU and gradient updates.
+```
+  | Model       | Epochs | Data Aug | Scheduler | Best Validation Accuracy |
+| ----------- | ------ | -------- | --------- | ------------------------ |
+| FlatNet     | 3      | ❌        | ❌         | 0.377                    |
+| FlatNet     | 10     | ❌        | ❌         | 0.392                    |
+| Tiny CNN    | 3      | ❌        | ❌         | 0.581                    |
+| Tiny CNN    | 10     | ❌        | ❌         | 0.647                    |
+| Tiny CNN    | 10     | ✅        | ❌         | 0.641                    |
+| Tiny CNN    | 30     | ✅        | ✅         | 0.688                    |
+| Wide CNN    | 30     | ✅        | ✅         | 0.728                    |
+| Deep CNN    | 30     | ✅        | ✅         | 0.784                    |
+| 4-block CNN | 30     | ✅        | ✅         | 0.815                    |
+| 5-block CNN | 30     | ✅        | ✅         | 0.829                    |
+```
