@@ -22,8 +22,15 @@
 
 ## Example Training Command:
 ```bash
+# Train TinyCNN (default)
+python train_model.py --model TinyCNN
+
 # Train DeepCNN with scheduler
 python train_model.py --model DeepCNN --use_scheduler
+
+# Custom batch size and learning rate
+python train_model.py --model WideCNN --batch_size 64 --lr 1e-4
+
 ```
 
 ## Results:
