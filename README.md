@@ -51,3 +51,11 @@ CNN-project/
      
 - Deep 5-Block CNN
   - 5 convolutional blocks, largest tested network.
+    
+#Training
+
+- Loss: CrossEntropyLoss
+- Optimizer: Adam, learning rate = 0.001
+- Scheduler: CosineAnnealingLR (per epoch)
+- Batch size: 128
+- Device: CUDA if available
