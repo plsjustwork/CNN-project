@@ -6,7 +6,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Dataset](#dataset)
+- [Dataset](#data)
 - [Training](#training)
 - [Results](#results)
 - [Models](#models)
