@@ -1,11 +1,13 @@
-FLAT MODEL RESULTS (3 EPOCHS):
+FLAT MODEL (3 EPOCHS):
 Best val acc 0.377
 
-FLAT MODEL RESULTS (10 EPOCHS):
+FLAT MODEL (10 EPOCHS):
 Best val acc 0.392
 
-FLAT MODEL + AUGMENTATION RESULTS (10 EPOCHS):
+FLAT MODEL + AUGMENTATION (10 EPOCHS):
 Best val acc: val acc 0.364
+
+FLAT MODEL + AUGMENTATION (30 EPOCHS):
 
 TINY CNN (3 EPOCHS):
 Best  val acc: 0.581
@@ -27,7 +29,7 @@ Best val acc: 0.688
 
 #Changed CNN to a wider one with 64x64 instead of 32x32; testing the CNN's width impact on the accuracy of project:
 Wide CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
-Best val acc: 0.728
+Best val acc: 0.73
 
 ----------> Adding a wider CNN instead of the tiny one added the results by 4% to the MODEL
 
@@ -39,13 +41,13 @@ Best val acc 0.784
 
 #Changing into an even deeper CNN; 4 block one to test the limit; see if we reached the cap of improving accuracy by widening the model
 4 block CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
-Best val acc 0.815
+Best val acc 0.818
 
 ---------->Still a big improvement of 3% Accuracy; widening the model seems to still give us even more accuracy.
 
 #Adding another layer to the CNN to test when the diminishing returns start to appear upon adding more and more layers
 5 block CNN + AUGMENTATION + SCHEDULER (30 EPOCHS):
-Best val acc 0.829
+Best val acc 0.825
 
 ----------> About a 1.5% improvement; widening it seems to add more accuracy but it isn't noteworthy; we are at the point of diminishing returns;
 Adding any more blocks would eventually cause the model to overfit and it is not cost effective.
