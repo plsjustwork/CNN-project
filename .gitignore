@@ -12,7 +12,6 @@ data/*
 *.gz
 
 # ML model checkpoints
-*.pt
 *.h5
 *.ckpt
 *.weights
