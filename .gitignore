@@ -2,7 +2,9 @@
 venv/
 
 # Datasets and archives
-data/
+data/*
+!data/outputs/
+!data/outputs/**
 *.zip
 *.tar.gz
 *.tgz
