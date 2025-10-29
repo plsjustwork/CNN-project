@@ -57,29 +57,53 @@ python train_model.py --model DeepCNN --use_scheduler
 - Explore more architectures (ResNet, VGG, etc.)
 - Add inference scripts and visualizations
 
+## Usage
+
+- 1.Install requirements
+```bash
+pip install -r requirements.txt
+```
+- 2.Download CIFAR-10 and visualize samples
+```bash
+python inspect_data.py
+```
+- 3.Train a model
+```bash
+python train_model.py --model DeepCNN --use_scheduler
+```
+- 4.Load a trained model for inference
+```bash
+from models.deep_cnn import DeepCNN
+import torch
+
+model = DeepCNN()
+model.load_state_dict(torch.load('data/outputs/models/DeepCNN_cifar10.pth'))
+model.eval()
+```
 ## Project Structure
 ```
 CNN-project/
+├── checkpoints/
+│   └── log.txt/ 
 ├── data/                  # CIFAR-10 dataset and outputs
-│   └── outputs/           # Important results folder
+│   ├── outputs/           # Important results folder
+│   └── models/
 ├── src/
 │   ├── models/            # CNN and baseline models
-│   │   ├── flat.py
-│   │   ├── tiny_cnn.py
+│   │   ├── flat_model.py
+│   │   ├── cnn_model.py
 │   │   ├── wide_cnn.py
 │   │   ├── deep_cnn.py
-│   │   └── ...
+│   │   ├── cnn_4block.py
+│   │   └── cnn_5block.py
 │   ├── dataloader.py      # Data loading and augmentation
 │   ├── train_utils.py     # Training and evaluation functions
+│   ├── train_model.py
 │   └── inspect_data.py    # Visualize sample CIFAR-10 images
-├── logs/
-│   └── log.txt            # Training results
 ├── .gitignore             # Ignored files/folders
+├── .requirements.txt
 └── README.md              # Project documentation
 ```
-## Training Function:
-- All models use the same run_one_epoch() function for training and evaluation, with proper handling for GPU and gradient updates.
-
 
 ## Observations:
 
