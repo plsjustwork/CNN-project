@@ -78,3 +78,10 @@ CNN-project/
 | 4-block CNN | 30     | ✅        | ✅         | 0.815                 |
 | 5-block CNN | 30     | ✅        | ✅         | 0.829                 |
 ```
+## Observations:
+
+- CNN architectures outperform fully connected networks by a large margin.
+- Increasing depth and width improves accuracy, but gains diminish beyond 4–5 convolutional blocks.
+- Data augmentation and scheduler improve final validation accuracy.
+
+  
