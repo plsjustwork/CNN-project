@@ -1,5 +1,20 @@
 # CNN-Project: CIFAR-10 Classification
 
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+## Table of Contents
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Models](#models)
+- [Training](#training)
+- [Usage](#usage)
+- [Saved Models & Outputs](#saved-models--outputs)
+- [Results](#results)
+- [Dependencies](#dependencies)
+- [License](#license)
+
 ## Overview
 
 - This project explores various neural network architectures on the CIFAR-10 dataset, comparing performance from simple fully connected models to deep convolutional networks.
